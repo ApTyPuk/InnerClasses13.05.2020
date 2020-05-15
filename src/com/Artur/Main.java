@@ -37,7 +37,7 @@ public class Main {
 //        btnPrint.setOnClickListener(new ClickListener());
 //        listen();
 //_________________________________________________________________________________
-        btnPrint.setOnClickListener(new Button.OnClickListener() {      //Anonymous CLASS
+        btnPrint.setOnClickListenerVariable(new Button.IOnClickListener() {      //Anonymous CLASS
             @Override
             public void onClick(String title) {
                 System.out.println(title + " was clicked.");

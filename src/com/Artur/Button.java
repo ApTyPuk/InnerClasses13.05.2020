@@ -2,7 +2,7 @@ package com.Artur;
 
 public class Button {
     private String title;
-    private OnClickListener onClickListener;
+    private IOnClickListener onClickListenerVariable;
 
     public Button(String title) {
         this.title = title;
@@ -12,17 +12,17 @@ public class Button {
         return title;
     }
 
-    public void setOnClickListener(OnClickListener onClickListener){
-        this.onClickListener = onClickListener;
+    public void setOnClickListenerVariable(IOnClickListener onClickListenerVariable){
+        this.onClickListenerVariable = onClickListenerVariable;
     }
 
     public void onClick() {
-        this.onClickListener.onClick(this.title);
+        this.onClickListenerVariable.onClick(this.title);
     }
 
 
 
-    public interface OnClickListener {
+    public interface IOnClickListener {
         public void onClick(String title);
     }
 
